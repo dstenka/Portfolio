@@ -47,11 +47,21 @@ const Navbar = () => {
                     <AiOutlineClose size={20} onClick={handleNav} />
                 </div>
                 <ul className="uppercase p-4">
-                    <li className="p-4 border-b border-gray-600">Home</li>
-                    <li className="p-4 border-b border-gray-600">Company</li>
-                    <li className="p-4 border-b border-gray-600">Resources</li>
-                    <li className="p-4 border-b border-gray-600">About</li>
-                    <li className="p-4">Contact</li>
+                    <li className="p-4 border-b border-gray-600">
+                        <a href="/">Home</a>
+                    </li>
+                    <li className="p-4 border-b border-gray-600">
+                        <a href="/my_projects">Eigene Projekte</a>
+                    </li>
+                    <li className="p-4 border-b border-gray-600">
+                        <a href="/refrences">Referenzen</a>
+                    </li>
+                    <li className="p-4 border-b border-gray-600">
+                        <a href="/about_me">Über mich</a>
+                    </li>
+                    <li className="p-4">
+                        <a href="/contact">Kontakt</a>
+                    </li>
                 </ul>
             </div>
         </div>
