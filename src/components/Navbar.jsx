@@ -11,18 +11,24 @@ const Navbar = () => {
     return (
         <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
             <h1 className="w-full text-3xl font-bold text-[#00df9a]">
-                Dominik Stenka
+                <a href="/">Dominik Stenka</a>
             </h1>
-            <ul className="hidden md:flex">
+            <ul className="hidden md:flex w-full">
                 <li className="p-4">
                     <a href="/">Home</a>
                 </li>
                 <li className="p-4">
-                    <a href="/projects">Projekte</a>
+                    <a href="/my_projects">Eigene Projekte</a>
                 </li>
-                <li className="p-4">Resources</li>
-                <li className="p-4">About</li>
-                <li className="p-4">Contact</li>
+                <li className="p-4">
+                    <a href="/refrences">Referenzen</a>
+                </li>
+                <li className="p-4">
+                    <a href="/about_me">Über mich</a>
+                </li>
+                <li className="p-4">
+                    <a href="/contact">Kontakt</a>
+                </li>
             </ul>
             <AiOutlineMenu
                 size={20}
