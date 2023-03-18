@@ -1,21 +1,24 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import Analytics from './Components/Analytics';
-import Newsletter from './Components/Newsletter';
-import Cards from './Components/Cards';
-import Footer from './Components/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import LandingPage from './pages/LandingPage';
+import Projects from './pages/Projects';
+import {
+    BrowserRouter,
+    Routes, //replaces "Switch" used till v5
+    Route,
+} from 'react-router-dom';
 
 function App() {
     return (
-        <div>
+        <BrowserRouter>
             <Navbar />
-            <Hero />
-            <Analytics />
-            <Newsletter />
-            <Cards />
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/projects" element={<Projects />} />
+            </Routes>
             <Footer />
-        </div>
+        </BrowserRouter>
     );
 }
 
