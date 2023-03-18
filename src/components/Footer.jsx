@@ -49,9 +49,9 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className="lg:col-span-2 flex justify-between mt-6">
+            <div className="md:col-span-2 grid md:grid-cols-4 sm:grid-cols-2 mt-6">
                 <div>
-                    <h6 className="font-medium text-gray-400">Lösungen</h6>
+                    <h6 className="font-medium text-[#00df9a]">Lösungen</h6>
                     <ul>
                         <li className="py-2 text-sm">Webentwicklung</li>
                         <li className="py-2 text-sm">Web Hosting</li>
@@ -60,7 +60,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h6 className="font-medium text-gray-400">Support</h6>
+                    <h6 className="font-medium text-[#00df9a]">Support</h6>
                     <ul>
                         <li className="py-2 text-sm">Preise</li>
                         <li className="py-2 text-sm">Dokumentationen</li>
@@ -69,7 +69,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h6 className="font-medium text-gray-400">Meine Person</h6>
+                    <h6 className="font-medium text-[#00df9a]">Meine Person</h6>
                     <ul>
                         <li className="py-2 text-sm">Über mich</li>
                         <li className="py-2 text-sm">Blog</li>
@@ -77,7 +77,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h6 className="font-medium text-gray-400">Datenschutz</h6>
+                    <h6 className="font-medium text-[#00df9a]">Datenschutz</h6>
                     <ul>
                         <li className="py-2 text-sm">Datenschutzerklärung</li>
                         <li className="py-2 text-sm">Impressum</li>
