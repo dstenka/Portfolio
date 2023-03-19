@@ -74,6 +74,9 @@ const Footer = () => {
                         <li className="py-2 text-sm">Über mich</li>
                         <li className="py-2 text-sm">Blog</li>
                         <li className="py-2 text-sm">Meine Karriere</li>
+                        <li className="py-2 text-sm">
+                            <a href="/login">Anmelden</a>
+                        </li>
                     </ul>
                 </div>
                 <div>

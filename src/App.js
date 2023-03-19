@@ -9,21 +9,25 @@ import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './pages/auth/Login';
 
 function App() {
     return (
-        <BrowserRouter>
+        <>
             <Navbar />
-            <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/my_projects" element={<Projects />} />
-                <Route path="/refrences" element={<Refrences />} />
-                <Route path="/about_me" element={<AboutMe />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/privacy" element={<Privacy />} />
-            </Routes>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/my_projects" element={<Projects />} />
+                    <Route path="/refrences" element={<Refrences />} />
+                    <Route path="/about_me" element={<AboutMe />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/login" element={<Login />}></Route>
+                </Routes>
+            </BrowserRouter>
             <Footer />
-        </BrowserRouter>
+        </>
     );
 }
 
